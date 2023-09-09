@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  libery-server:
+    build:
+      context: .
+    ports:
+      - "9080:9080"
+      - "9443:9443" # HTTPS listener
+    restart: always
