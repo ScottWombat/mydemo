@@ -1,0 +1,1 @@
+INSERT INTO book(name,author) VALUES('Harry Potter','J. K. Rowling');
