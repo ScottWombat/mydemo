@@ -1,0 +1,12 @@
+To run integration test
+
+>mvn liberty:dev -DhotTests
+
+
+curl -i -X POST  http://localhost:9080/demo1/api/multipart/simple -F "name=Hantsy" -F "part=@/home/revit/test_files/test.txt" -H "Content-Type: multipart/form-data"
+
+
+curl -i -X POST  http://localhost:9080/demo1/api/multipart/list -F "part=@/home/revit/test_files/test.txt" -F "part=@/home/revit/test_files/test1.txt" -H "Content-Type: multipart/form-data"
+
+
+curl -v http://localhost:9080/demo1/api/multipart -H "Accept: multipart/form-data"
